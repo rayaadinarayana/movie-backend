@@ -29,7 +29,7 @@ app.use(passport.session());
 
 
 //Connecting to MongoDB using mongoose
-mongoose.connect("mongodb+srv://nani7780:nani3657@cluster0.uzvyab9.mongodb.net/secondDB?retryWrites=true&w=majority", {useNewUrlParser: true})
+mongoose.connect("mongodb+srv://nani7780:nani3657@cluster0.uzvyab9.mongodb.net/secondDB?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology: true})
     .then(()=>{
         console.log("connected to db")
     });
